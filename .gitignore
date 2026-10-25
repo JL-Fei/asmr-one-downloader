@@ -1,0 +1,19 @@
+# 忽略构建与个人环境产物
+node_modules/
+*.log
+
+# 本机生成的 native host 清单（install.js 会按当前路径与扩展 ID 重新生成）
+com.asmr.downloader.json
+
+# 历史备份，不进仓库
+*.bak
+*.bak-*
+*.orig
+*.rej
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

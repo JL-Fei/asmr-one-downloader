@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ASMR One 批量下载器",
+  "version": "1.1.0",
+  "description": "在 asmr.one 作品页提供文件选择 + 批量下载（逐文件进度 / 实时速度 / 失败单独重试）",
+  "permissions": ["nativeMessaging", "downloads", "storage", "scripting", "activeTab", "alarms"],
+  "host_permissions": [
+    "https://api.asmr.one/*",
+    "https://api.asmr-100.com/*",
+    "https://api.asmr-200.com/*",
+    "https://api.asmr-300.com/*",
+    "https://raw.kiko-play-niptan.one/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://asmr.one/work/*", "https://asmr.one/works/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ASMR One 批量下载器"
+  },
+  "icons": {}
+}

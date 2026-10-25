@@ -33,7 +33,7 @@
 ### 1. 下载代码
 
 ```bash
-git clone https://github.com/<你的用户名>/asmr-one-downloader.git
+git clone https://github.com/JL-Fei/asmr-one-downloader.git
 cd asmr-one-downloader
 ```
 
